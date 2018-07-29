@@ -5,7 +5,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/features", glue = { "stepDefinitions" }, plugin = { "pretty", "json:target/Cucumber.json" })
+@CucumberOptions(features = "src/test/java/features", glue = { "stepDefinitions" }, plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json" })
 
 public class TestRunner {
 
